@@ -10,8 +10,9 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 app = FastAPI()
 
 # Load the pre-trained model
-with open('rf_model.pkl', 'rb') as model_file:
+with open('rf_model_production.pkl', 'rb') as model_file:
     model = pickle.load(model_file)
+
 
 # Load the TF-IDF vectorizer
 with open('tokenizer.pkl', 'rb') as vectorizer_file:
