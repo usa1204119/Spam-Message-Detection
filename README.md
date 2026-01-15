@@ -47,3 +47,15 @@ The dataset used for training and evaluation is named "Spam SMS Collection.txt".
 
 ### Contact Information:
 For any inquiries or assistance, please contact [zacthahseer123@gmail.com].
+
+<!-- Updated  -->
+## MLOps Workflow
+
+1. A baseline production model is defined using F1-score.
+2. Newly trained models are evaluated using the same metric.
+3. A comparison script checks whether the new model outperforms the baseline.
+4. Only models that improve performance are promoted to production.
+5. The FastAPI service always serves the approved production model.
+
+This ensures controlled and reproducible ML deployment.
+
